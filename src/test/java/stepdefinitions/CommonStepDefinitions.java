@@ -1,0 +1,12 @@
+package stepdefinitions;
+
+import io.cucumber.java.en.*;
+
+import static com.codeborne.selenide.Selenide.open;
+
+public class CommonStepDefinitions {
+    @Given("Kullanici {string} adresine gider")
+    public void kullanici_adresine_gider(String string) {
+        open(string);
+    }
+}
